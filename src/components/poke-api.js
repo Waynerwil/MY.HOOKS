@@ -1,5 +1,5 @@
 const API_URL = 'https://64ee628d219b3e2873c32c90.mockapi.io/favories';
-
+//GET : Obtener resultados
 async function fetchFavorites() {
   try {
     const response = await fetch(`${API_URL}/favorite-pokemon`);
@@ -10,6 +10,7 @@ async function fetchFavorites() {
   }
 }
 
+// POST : Insertar favoritos
 async function addFavorite(favorite) {
   try {
     const response = await fetch(`${API_URL}/favorite-pokemon`, {
